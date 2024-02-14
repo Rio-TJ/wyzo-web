@@ -42,7 +42,7 @@ const Sidebar = ({ openClass }) => {
                   className="nav nav-tabs nav-tabs-mobile mt-25"
                   fill
                 >
-                  <Tab eventKey="menu" title="Menu">
+                  <Tab eventKey="menu" title="Меню">
                     <div className="tab-pane">
                       <nav className="mt-15">
                         <ul className="mobile-menu font-heading">
@@ -71,9 +71,9 @@ const Sidebar = ({ openClass }) => {
                               </svg>
                             </span>
                             <Link className="active" href="/">
-                              Home
+                              Главная
                             </Link>
-                            <ul
+                            {/* <ul
                               className={
                                 isActive.key == 1
                                   ? "sub-menu d-block"
@@ -116,7 +116,7 @@ const Sidebar = ({ openClass }) => {
                               <li>
                                 <Link href="/index-12">Homepage - 12</Link>
                               </li>
-                            </ul>
+                            </ul> */}
                           </li>
                           <li
                             className={
@@ -142,8 +142,8 @@ const Sidebar = ({ openClass }) => {
                                 ></path>
                               </svg>
                             </span>
-                            <Link href="#">Company</Link>
-                            <ul
+                            <Link href="#offer">Что мы предлагаем</Link>
+                            {/* <ul
                               className={
                                 isActive.key == 2
                                   ? "sub-menu d-block"
@@ -170,7 +170,7 @@ const Sidebar = ({ openClass }) => {
                                   Term and Conditions
                                 </Link>
                               </li>
-                            </ul>
+                            </ul> */}
                           </li>
                           <li
                             className={
@@ -196,8 +196,8 @@ const Sidebar = ({ openClass }) => {
                                 ></path>
                               </svg>
                             </span>
-                            <Link href="#">Career</Link>
-                            <ul
+                            <Link href="#PricingPlan">Тарифы</Link>
+                            {/* <ul
                               className={
                                 isActive.key == 3
                                   ? "sub-menu d-block"
@@ -210,7 +210,7 @@ const Sidebar = ({ openClass }) => {
                               <li>
                                 <Link href="/job-detail">Job Details</Link>
                               </li>
-                            </ul>
+                            </ul> */}
                           </li>
                           <li
                             className={
@@ -236,8 +236,8 @@ const Sidebar = ({ openClass }) => {
                                 ></path>
                               </svg>
                             </span>
-                            <Link href="/blog">Blog</Link>
-                            <ul
+                            <Link href="#FAQ">Часто задаваемые вопросы</Link>
+                            {/* <ul
                               className={
                                 isActive.key == 4
                                   ? "sub-menu d-block"
@@ -253,9 +253,9 @@ const Sidebar = ({ openClass }) => {
                               <li>
                                 <Link href="/blog-detail">Blog Details</Link>
                               </li>
-                            </ul>
+                            </ul> */}
                           </li>
-                          <li
+                          {/* <li
                             className={
                               isActive.key == 5
                                 ? "has-children active"
@@ -302,9 +302,9 @@ const Sidebar = ({ openClass }) => {
                                   Product Details
                                 </Link>
                               </li>
-                            </ul>
-                          </li>
-                          <li
+                            </ul> 
+                          </li> */}
+                          {/* <li
                             className={
                               isActive.key == 6
                                 ? "has-children active"
@@ -349,15 +349,15 @@ const Sidebar = ({ openClass }) => {
                                 <Link href="/404">Error 404</Link>
                               </li>
                             </ul>
-                          </li>
+                          </li> */}
                           <li>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="#contact">Контакты</Link>
                           </li>
                         </ul>
                       </nav>
                     </div>
                   </Tab>
-                  <Tab eventKey="account" title="Account">
+                  {/* <Tab eventKey="account" title="Account">
                     <nav className="mt-15">
                       <ul className="mobile-menu font-heading">
                         <li>
@@ -385,8 +385,8 @@ const Sidebar = ({ openClass }) => {
                         </li>
                       </ul>
                     </nav>
-                  </Tab>
-                  <Tab eventKey="notification" title="Notification">
+                  </Tab> */}
+                  {/* <Tab eventKey="notification" title="Notification">
                     <p className="font-sm-bold color-brand-1 mt-30">Today</p>
                     <div className="notifications-item">
                       <div className="item-notify">
@@ -495,14 +495,14 @@ const Sidebar = ({ openClass }) => {
                         </div>
                       </div>
                     </div>
-                  </Tab>
+                  </Tab> */}
                 </Tabs>
               </div>
               <div className="site-copyright color-grey-400 mt-0">
                 <div className="box-download-app">
                   <p className="font-xs color-grey-400 mb-25">
-                    Download our Apps and get extra 15% Discount on your first
-                    Order…!
+                    Загрузите наши приложения и получите дополнительную скидку
+                    15% на свой первый заказ…!
                   </p>
                   <div className="mb-25">
                     <Link className="mr-10" href="#">
@@ -516,7 +516,7 @@ const Sidebar = ({ openClass }) => {
                     </Link>
                   </div>
                   <p className="font-sm color-grey-400 mt-20 mb-10">
-                    Secured Payment Gateways
+                    Защищенные платежные шлюзы
                   </p>
                   <img
                     src="assets/imgs/template/payment-method.png"
@@ -524,12 +524,8 @@ const Sidebar = ({ openClass }) => {
                   />
                 </div>
                 <div className="mb-0">
-                  Copyright 2022 © IORI - Marketplace Template.
+                  2024 © WYZO.
                   <br />
-                  Designed by
-                  <Link href="/http:/alithemes.com" target="_blank">
-                    &nbsp; AliThemes
-                  </Link>
                 </div>
               </div>
             </div>
