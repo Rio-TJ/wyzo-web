@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import Offer from "../components/slider/Offer";
 import Knowledgebase from "../components/slider/Knowledgebase";
+
 import Accordion from "../components/elements/Accordion";
 
 const HomePage6 = () => {
