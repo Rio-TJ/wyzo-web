@@ -382,7 +382,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       </ul>
                     </li> */}
                     <li>
-                      <a href="#contact">Контакты</a>
+                      {/* <a href="#contact">Контакты</a> */}
                       {/* <Link href="/contact">Contact</Link> */}
                     </li>
                   </ul>

@@ -350,9 +350,9 @@ const Sidebar = ({ openClass }) => {
                               </li>
                             </ul>
                           </li> */}
-                          <li>
+                          {/* <li>
                             <Link href="#contact">Контакты</Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </nav>
                     </div>
@@ -498,7 +498,7 @@ const Sidebar = ({ openClass }) => {
                   </Tab> */}
                 </Tabs>
               </div>
-              <div className="site-copyright color-grey-400 mt-0">
+              {/* <div className="site-copyright color-grey-400 mt-0">
                 <div className="box-download-app">
                   <p className="font-xs color-grey-400 mb-25">
                     Загрузите наши приложения и получите дополнительную скидку
@@ -527,7 +527,7 @@ const Sidebar = ({ openClass }) => {
                   2024 © WYZO.
                   <br />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
