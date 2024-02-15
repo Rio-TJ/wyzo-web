@@ -45,26 +45,6 @@ const HomePage1 = () => {
                     <Link className="btn btn-brand-1 hover-up" href="#">
                       Начните сейчас
                     </Link>
-                    <a
-                      className="btn btn-default font-sm-bold hover-up"
-                      href="#"
-                    >
-                      Узнать больше
-                      <svg
-                        className="w-6 h-6 icon-16 ml-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </a>
                   </div>
                 </div>
                 <div className="col-lg-5 d-none d-lg-block">
@@ -86,7 +66,7 @@ const HomePage1 = () => {
                   выполнять вашу работу
                 </h3>
               </div>
-              <div className="mt-30">
+              {/* <div className="mt-30">
                 <div className="box-swiper">
                   <div className="swiper-container swiper-group-8">
                     <div className="swiper-wrapper">
@@ -95,7 +75,7 @@ const HomePage1 = () => {
                     <div className="swiper-pagination swiper-pagination-group-8" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -113,25 +93,7 @@ const HomePage1 = () => {
                   бизнесом.
                 </p>
               </div>
-              <div className="col-lg-4 col-md-4 text-md-end text-start">
-                <a className="btn btn-default font-sm-bold pl-0">
-                  Узнать больше
-                  <svg
-                    className="w-6 h-6 icon-16 ml-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </a>
-              </div>
+              <div className="col-lg-4 col-md-4 text-md-end text-start"></div>
             </div>
             <div className="row mt-50">
               <div className="col-lg-4 col-md-6 col-sm-6">
@@ -150,7 +112,7 @@ const HomePage1 = () => {
                       обслуживания.
                     </p>
                     <div className="box-button-offer">
-                      <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                      {/* <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
                         Узнать больше
                         <svg
                           className="w-6 h-6 icon-16 ml-5"
@@ -166,7 +128,7 @@ const HomePage1 = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -188,25 +150,7 @@ const HomePage1 = () => {
                       сделает все необходимое для ведения вашего бизнеса.Начните
                       свой онлайн-бизнес.
                     </p>
-                    <div className="box-button-offer">
-                      <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
-                        Узнать больше
-                        <svg
-                          className="w-6 h-6 icon-16 ml-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </a>
-                    </div>
+                    <div className="box-button-offer"></div>
                   </div>
                 </div>
               </div>
@@ -225,25 +169,7 @@ const HomePage1 = () => {
                       социальных платформах и стратегий, основанных на
                       искусственном интеллекте.
                     </p>
-                    <div className="box-button-offer">
-                      <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
-                        Узнать больше
-                        <svg
-                          className="w-6 h-6 icon-16 ml-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </a>
-                    </div>
+                    <div className="box-button-offer"></div>
                   </div>
                 </div>
               </div>
@@ -371,7 +297,7 @@ const HomePage1 = () => {
                 </div>
                 <div className="col-xl-6 col-lg-6">
                   <div className="box-info-video">
-                    <span className="btn btn-tag">Бизнес</span>
+                    {/* <span className="btn btn-tag">WYZO</span> */}
                     <h3 className="color-brand-2 mt-10 mb-15">
                       Управляйте своим онлайн-бизнесом теперь с помощью ИИ
                     </h3>
@@ -383,14 +309,14 @@ const HomePage1 = () => {
                       возможностям искусственного интеллекта, вы можете вести
                       свой бизнес абсолютно без помощи рук.
                     </p>
-                    <div className="box-button-video">
+                    {/* <div className="box-button-video">
                       <a
                         className="btn btn-play font-sm-bold popup-youtube hover-up"
                         onClick={() => setOpen(true)}
                       >
                         Проиграть видео
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -1636,7 +1562,7 @@ const HomePage1 = () => {
                   <Link className="btn btn-brand-1 hover-up" href="#">
                     Связаться с нами
                   </Link>
-                  <a className="btn btn-default font-sm-bold hover-up" href="#">
+                  {/* <a className="btn btn-default font-sm-bold hover-up" href="#">
                     Центр поддержки
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -1652,7 +1578,7 @@ const HomePage1 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="col-xl-9 col-lg-8">
@@ -1868,30 +1794,13 @@ const HomePage1 = () => {
                   <Link className="btn btn-brand-1 hover-up" href="#">
                     Начать
                   </Link>
-                  <a className="btn btn-default font-sm-bold hover-up" href="#">
-                    Узнать больше
-                    <svg
-                      className="w-6 h-6 icon-16 ml-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
             <div className="row mb-100 mt-50 project-revert">
               <div className="col-xl-5 col-lg-6">
                 {" "}
-                <span className="btn btn-tag">Бизнес</span>
+                {/* <span className="btn btn-tag">Бизнес</span> */}
                 <h3 className="color-brand-1 mt-10 mb-15">
                   Управление запасами и создание контента стало проще
                 </h3>
@@ -1979,23 +1888,6 @@ const HomePage1 = () => {
                   <Link className="btn btn-brand-1 hover-up" href="#">
                     Начать
                   </Link>
-                  <a className="btn btn-default font-sm-bold hover-up" href="#">
-                    Узнать больше
-                    <svg
-                      className="w-6 h-6 icon-16 ml-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </a>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-6">
@@ -2546,7 +2438,7 @@ const HomePage1 = () => {
           </div>
         </section> */}
 
-        <section className="section mt-50">
+        <section className="section mt-50 mb-50">
           <div className="container">
             <div className="row align-items-start">
               <p>НАШИ ПРЕМИУМ-КЛИЕНТЫ</p>
@@ -2558,16 +2450,18 @@ const HomePage1 = () => {
                 className="col-xl-6 col-lg-6 mb-30 "
                 style={{ cursor: "pointer" }}
               >
-                <div className="card-radius-32 bg-4">
-                  <div className="card-info">
-                    <h3 className="color-brand-1 mb-20">Panda tj</h3>
-                    <p className="font-md color-grey-500 mb-20">
-                      Ждём вас за покупками каждый день, мы всегда к вашим
-                      услугам!
-                    </p>
-                    <div className="mt-0">
-                      {" "}
-                      <Link
+                <a target="_blank" href="https://panda.tj/">
+                  <div className="card-radius-32 bg-4">
+                    <div className="card-info">
+                      <h3 className="color-brand-1 mb-20">Panda tj</h3>
+                      <p className="font-md color-grey-500 mb-20">
+                        Ждём вас за покупками каждый день, мы всегда к вашим
+                        <br />
+                        услугам!
+                      </p>
+                      <div className="mt-0">
+                        {" "}
+                        {/* <Link
                         target="_blank"
                         href="https://panda.tj/"
                         className="btn btn-brand-1-small"
@@ -2587,34 +2481,43 @@ const HomePage1 = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </Link>
+                      </Link> */}
+                      </div>
+                      {/* <img src={panda}></img> */}
                     </div>
-                    {/* <img src={panda}></img> */}
+                    <div className="card-image">
+                      {" "}
+                      <img
+                        src={`assets/imgs/template/panda.png`}
+                        className="hidden"
+                        alt="panda"
+                        style={{
+                          width: "90%",
+
+                          borderRadius: "10px",
+                          border: "2px solid gray",
+                          padding: "3px",
+                        }}
+                      />
+                    </div>
                   </div>
-                  <div className="card-image">
-                    {" "}
-                    <img
-                      src={`assets/imgs/template/panda.png`}
-                      className="hidden"
-                      alt="panda"
-                    />
-                  </div>
-                </div>
+                </a>
               </div>
               <div
                 className="col-xl-6 col-lg-6 mb-30"
                 style={{ cursor: "pointer" }}
               >
-                <div className="card-radius-32 bg-4 project-card-4">
-                  <div className="card-info">
-                    <h3 className="color-brand-1 mb-20">Podari.tj</h3>
-                    <p className="font-md color-grey-500 mb-20">
-                      Приглашаем вас на увлекательное путешествие по нашему
-                      магазину каждый день.
-                    </p>
-                    <div className="mt-0">
-                      {" "}
-                      <Link
+                <a target="_blank" href="https://podari.tj/">
+                  <div className="card-radius-32 bg-4 project-card-4">
+                    <div className="card-info">
+                      <h3 className="color-brand-1 mb-20">Podari.tj</h3>
+                      <p className="font-md color-grey-500 mb-20">
+                        Приглашаем вас на увлекательное путешествие по нашему
+                        магазину каждый день.
+                      </p>
+                      <div className="mt-0">
+                        {" "}
+                        {/* <Link
                         className="btn btn-brand-1-small"
                         target="_blank"
                         href="https://podari.tj/"
@@ -2634,29 +2537,40 @@ const HomePage1 = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </Link>
+                      </Link> */}
+                      </div>
+                    </div>
+                    <div className="card-image">
+                      {" "}
+                      <img
+                        src="assets/imgs/template/podari.jpg"
+                        alt="iori"
+                        style={{
+                          width: "90%",
+                          borderRadius: "10px",
+                          border: "2px solid #136481",
+                          padding: "3px",
+                        }}
+                      />
                     </div>
                   </div>
-                  <div className="card-image">
-                    {" "}
-                    <img src="assets/imgs/template/podari.jpg" alt="iori" />
-                  </div>
-                </div>
+                </a>
               </div>
               <div
                 className="col-xl-6 col-lg-6 mb-30"
                 style={{ cursor: "pointer" }}
               >
-                <div className="card-radius-32 project-card-2">
-                  <div className="card-info">
-                    <h3 className="color-brand-1 mb-20">Bonibi Case</h3>
-                    <p className="font-md color-grey-500 mb-20">
-                      The First 2-in-1 Detachable and Customizable Crossbody
-                      Phone Case
-                    </p>
-                    <div className="text-center">
-                      {" "}
-                      <Link
+                <a target="_blank" href="https://www.bonibicase.com">
+                  <div className="card-radius-32 project-card-2">
+                    <div className="card-info">
+                      <h3 className="color-brand-1 mb-20">Bonibi Case</h3>
+                      <p className="font-md color-grey-500 mb-20">
+                        The First 2-in-1 Detachable and Customizable Crossbody
+                        Phone <br />
+                        Case
+                      </p>
+                      {/* <div className="text-center"> */}{" "}
+                      {/* <Link
                         className="btn btn-brand-1-small"
                         target="_blank"
                         href="https://www.bonibicase.com"
@@ -2676,30 +2590,40 @@ const HomePage1 = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </Link>
+                      </Link> */}
+                      {/* </div> */}
+                    </div>
+                    <div className="card-image">
+                      {" "}
+                      <img
+                        src="assets/imgs/template/bonibi.jpg"
+                        alt="iori"
+                        style={{
+                          width: "90%",
+                          borderRadius: "10px",
+                          border: "2px solid white",
+                          // padding: "3px",
+                        }}
+                      />
                     </div>
                   </div>
-                  <div className="card-image">
-                    {" "}
-                    <img src="assets/imgs/template/bonibi.jpg" alt="iori" />
-                  </div>
-                </div>
+                </a>
               </div>
               <div
                 className="col-xl-6 col-lg-6 mb-30"
                 style={{ cursor: "pointer" }}
               >
-                <div className="project-card-3 card-radius-32">
-                  <div className="card-info">
-                    <h3 className="color-brand-1 mb-20">RoastingWorks</h3>
-                    <p className="font-md color-grey-500 mb-20">
-                      Nitelikli kahve,nitelikli hizmet
-                      <br />
-                      <br />
-                    </p>
-                    <div className="text-center">
-                      {" "}
-                      <Link
+                <a target="_blank" href="https://roastingworks.com/">
+                  <div className="project-card-3 card-radius-32">
+                    <div className="card-info">
+                      <h3 className="color-brand-1 mb-20">RoastingWorks</h3>
+                      <p className="font-md color-grey-500 mb-20">
+                        Nitelikli kahve,nitelikli
+                        <br />
+                        hizmet
+                      </p>
+                      {/* <div className="text-center"> */}{" "}
+                      {/* <Link
                         className="btn btn-brand-1-small"
                         target="_blank"
                         href="https://roastingworks.com/"
@@ -2719,20 +2643,30 @@ const HomePage1 = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </Link>
+                      </Link> */}
+                      {/* </div> */}
+                    </div>
+                    <div className="card-image">
+                      {" "}
+                      <img
+                        src="/assets/imgs/template/rsv.jpg"
+                        alt="rsv"
+                        style={{
+                          width: "90%",
+                          borderRadius: "10px",
+                          border: "2px solid gray",
+                          // padding: "3px",
+                        }}
+                      />
                     </div>
                   </div>
-                  <div className="card-image">
-                    {" "}
-                    <img src="/assets/imgs/template/rsv.jpg" alt="rsv" />
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="section mt-50">
+        {/* <section className="section mt-50">
           <div className="container">
             <div className="box-newsletter">
               <div className="row align-items-center">
@@ -2792,7 +2726,7 @@ const HomePage1 = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </Layout>
     </>
   );
