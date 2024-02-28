@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
         }, 2000);
 
         const WOW = require('wowjs');
+        
         window.wow = new WOW.WOW({
             live: false
         });
