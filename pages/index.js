@@ -6,11 +6,17 @@ import Layout from "../components/layout/Layout";
 import Brand from "../components/slider/Brand";
 import Testimonial from "../components/slider/Testimonial";
 import ModalVideo from "react-modal-video";
+import Team from "../components/slider/Team";
+import Offer from "../components/slider/Offer";
 
 const HomePage1 = () => {
   const [isOpen, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(1);
+  const [pricing, setPricing] = useState(1);
 
+  const handlePricing = (index) => {
+    setPricing(index); // remove the curly braces
+  };
   const handleOnClick = (index) => {
     setActiveIndex(index); // remove the curly braces
   };
@@ -21,7 +27,58 @@ const HomePage1 = () => {
       </Head>
 
       <Layout>
-        <section className="section">
+        <section className="section banner-8">
+          <div className="asset-1 shape-1" />
+          <div className="asset-2 shape-2" />
+          <div className="asset-3 shape-3" />
+          <div className="asset-4 shape-1" />
+          <div className="asset-5 shape-2" />
+          <div className="box-banner-home8">
+            <div className="container">
+              <div className="row">
+                <div className="col-xl-8 col-lg-10 m-auto">
+                  <div className="text-center">
+                    {" "}
+                    <span className="font-md color-grey-400"></span>
+                    <h1 className="color-brand-1 mb-25 mt-10">
+                      Начните свой онлайн-бизнес сегодня
+                    </h1>
+                    <p className="font-md color-grey-500 mb-25">
+                      Элегантно структурируйте решение для электронной
+                      коммерции, которое будет соответствовать
+                      <br className="d-none d-lg-block" /> вашему бизнесу и
+                      расширяться вместе с вашим рынком.
+                    </p>
+                    {/* <div className="text-center">
+                      {" "}
+                      <Link href="#">
+                        <img
+                          className="mr-10"
+                          src="/assets/imgs/template/appstore.png"
+                          alt="iori"
+                        />
+                      </Link>
+                      <Link href="#">
+                        <img
+                          src="/assets/imgs/template/google-play.png"
+                          alt="iori"
+                        />
+                      </Link>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-80">
+              <div className="box-swiper">
+                <div className="swiper-container swiper-group-7-center">
+                  <Team />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <section className="section">
           <div className="container">
             <div className="banner-1">
               <div className="row align-items-center">
@@ -56,7 +113,7 @@ const HomePage1 = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="section">
           <div className="box-radius-bottom">
             <div className="container">
@@ -80,6 +137,30 @@ const HomePage1 = () => {
           </div>
         </section>
         <section className="section mt-100">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
+                <h2 className="color-brand-1 mb-20" id="offer">Что мы предлагаем</h2>
+                <p className="font-lg color-gray-500">
+                  Мы используем новейшие технологии, включая решения
+                  искусственного <br className="d-none d-lg-block" />{" "}
+                  интеллекта, которые помогают предприятиям со статистикой и
+                  точным <br className="d-none d-lg-block" />
+                  анализом данных для лучшего управления бизнесом.
+                </p>
+              </div>
+            </div>
+            <div className="mt-50">
+              <div className="box-swiper">
+                <div className="swiper-container swiper-group-4">
+                  <Offer />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <section className="section mt-100">
           <div className="container">
             <div className="row align-items-end">
               <div className="col-lg-8 col-md-8">
@@ -112,7 +193,7 @@ const HomePage1 = () => {
                       обслуживания.
                     </p>
                     <div className="box-button-offer">
-                      {/* <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                      <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
                         Узнать больше
                         <svg
                           className="w-6 h-6 icon-16 ml-5"
@@ -128,7 +209,7 @@ const HomePage1 = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </a> */}
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -173,7 +254,7 @@ const HomePage1 = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="card-offer hover-up">
                   <div className="card-image">
                     <img
@@ -280,10 +361,11 @@ const HomePage1 = () => {
                     </div>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
         <section className="section mt-50 pt-50 pb-90">
           <div className="container">
             <div className="bg-brand-1 box-cover-video">
@@ -333,19 +415,26 @@ const HomePage1 = () => {
         <section className="section mt-50 bg-grey-80 bg-plan pt-110 pb-110">
           <div className="container">
             <div className="row align-items-end">
-              <div className="col-lg-8 col-md-8">
-                <h2 className="color-brand-1 mb-20" id="PricingPlan">
+              <div className="col-lg-12 col-md-12">
+                <h2
+                  className="color-brand-1 mb-20"
+                  id="PricingPlan"
+                  style={{ textAlign: "center" }}
+                >
                   Планы, которые лучше всего соответствуют требованиям вашего
                   бизнеса
                 </h2>
-                <p className="font-lg color-gray-500">
+                <p
+                  className="font-lg color-gray-500"
+                  style={{ textAlign: "center" }}
+                >
                   Мы тщательно разработали готовые к установке пакеты для вашего
                   бизнеса. <br className="d-none d-lg-block" /> Вы можете
                   добавить другие опции поверх пакета, соответствующие вашим
                   идеям.
                 </p>
               </div>
-              <div className="col-lg-4 col-md-4 text-md-end text-start">
+              {/* <div className="col-lg-4 col-md-4 text-md-end text-start">
                 <a className="btn btn-default font-sm-bold pl-0">
                   Сравнить планы
                   <svg
@@ -363,7 +452,28 @@ const HomePage1 = () => {
                     />
                   </svg>
                 </a>
-              </div>
+              </div> */}
+              <ul className="tabs-plan change-price-plan" role="tablist">
+                <li>
+                  {" "}
+                  <a
+                    style={{ marginRight: "7px" }}
+                    className={pricing === 1 ? "active" : ""}
+                    onClick={() => handlePricing(1)}
+                  >
+                    Ежемесячно
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a
+                    className={pricing === 2 ? "active" : ""}
+                    onClick={() => handlePricing(2)}
+                  >
+                    Ежегодно
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="row mt-50">
               <div className="col-xl-4 col-lg-6 col-md-6">
@@ -384,7 +494,9 @@ const HomePage1 = () => {
                     </div>
                   </div>
                   <div className="box-day-trial">
-                    <span className="font-lg-bold color-brand-1">$34</span>
+                    <span className="font-lg-bold color-brand-1">
+                      ${pricing == 1 ? "34" : "300"}
+                    </span>
                     <span className="font-md color-grey-500">/ месяц</span>
                     <br />
                   </div>
@@ -671,7 +783,9 @@ const HomePage1 = () => {
                     </div>
                   </div>
                   <div className="box-day-trial">
-                    <span className="font-lg-bold color-brand-1">$79</span>
+                    <span className="font-lg-bold color-brand-1">
+                      ${pricing == 1 ? "79" : "700"}
+                    </span>
                     <span className="font-md color-grey-500">
                       / месяц
                       <br />
@@ -1135,7 +1249,9 @@ const HomePage1 = () => {
                     </div>
                   </div>
                   <div className="box-day-trial">
-                    <span className="font-lg-bold color-brand-1">$***</span>
+                    <span className="font-lg-bold color-brand-1">
+                      ${pricing == 1 ? "***" : "***"}
+                    </span>
                     <span className="font-md color-grey-500">/ месяц</span>
                     <br />
                   </div>
@@ -1410,7 +1526,299 @@ const HomePage1 = () => {
             </div>
           </div>
         </section>
-        <section className="section pt-80 mb-30 bg-faqs">
+
+        <section className="section mt-100 box-testimonial-2">
+          <div className="container">
+            <div className="row align-items-start">
+              <div className="col-lg-4 text-start pt-50">
+                <div className="row">
+                  <div className="col-md-9">
+                    <img
+                      className="mb-30"
+                      src="/assets/imgs/page/homepage2/customer.png"
+                      alt="iori"
+                    />
+                  </div>
+                </div>
+                <h2 className="color-brand-1 mb-20">
+                  Что говорят наши клиенты
+                </h2>
+                <p className="font-lg color-gray-500">
+                  Послушайте мнение наших пользователей, которые сэкономили
+                  тысячи долларов на стартапах.
+                </p>
+                <div className="mt-20">
+                  {/* <Link className="btn btn-default font-sm-bold pl-0" href="#">View All
+                                        <svg className="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></Link> */}
+                </div>
+              </div>
+              <div className="col-lg-8">
+                <div className="row">
+                  <div className="col-lg-6 col-md-6">
+                    <div className="mb-30 mt-50">
+                      <div className="card-testimonial-grid">
+                        <div className="box-author mb-10">
+                          <Link href="#">
+                            <img
+                              src="/assets/imgs/page/homepage1/author.png"
+                              alt="iori"
+                            />
+                          </Link>
+                          <div className="author-info">
+                            <Link href="#">
+                              <span className="font-md-bold color-brand-1 author-name">
+                                Андрей Иванов
+                              </span>
+                            </Link>
+                            <span className="font-xs color-grey-500 department"></span>
+                          </div>
+                        </div>
+                        <p className="font-md color-grey-500">
+                          Запустить свой онлайн-бизнес стало гораздо проще
+                          благодаря этой платформе. Решение для электронной
+                          коммерции, предложенное здесь, отлично подходит для
+                          моих потребностей. Рекомендую!
+                        </p>
+                        <div className="card-bottom-info">
+                          <span className="font-xs color-grey-500 date-post">
+                            10 января 2024
+                          </span>
+                          <div className="rating text-end">
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mb-30 testimonial-warning">
+                      <div className="card-testimonial-grid">
+                        <div className="box-author mb-10">
+                          <Link href="#">
+                            <img
+                              src="/assets/imgs/page/homepage2/author2.png"
+                              alt="iori"
+                            />
+                          </Link>
+                          <div className="author-info">
+                            <Link href="#">
+                              <span className="font-md-bold color-brand-1 author-name">
+                                Николай Сидоров
+                              </span>
+                            </Link>
+                            <span className="font-xs color-grey-500 department"></span>
+                          </div>
+                        </div>
+                        <p className="font-md color-grey-500">
+                          Сотрудничество с этой платформой помогло мне
+                          значительно упростить процесс запуска онлайн-бизнеса.
+                          Их решение для электронной коммерции превзошло мои
+                          ожидания. Спасибо!
+                        </p>
+                        <div className="card-bottom-info">
+                          <span className="font-xs color-grey-500 date-post">
+                            1 декабря 2023
+                          </span>
+                          <div className="rating text-end">
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6">
+                    <div className="mb-30">
+                      <div className="card-testimonial-grid">
+                        <div className="box-author mb-10">
+                          <Link href="#">
+                            <img
+                              src="/assets/imgs/page/homepage2/author3.png"
+                              alt="iori"
+                            />
+                          </Link>
+                          <div className="author-info">
+                            <Link href="#">
+                              <span className="font-md-bold color-brand-1 author-name">
+                                Дэвид Уильямс
+                              </span>
+                            </Link>
+                            <span className="font-xs color-grey-500 department"></span>
+                          </div>
+                        </div>
+                        <p className="font-md color-grey-500">
+                          Эта платформа действительно помогла мне воплотить мои
+                          бизнес-идеи в жизнь. Решение для электронной
+                          коммерции, предоставленное ими, оказалось очень
+                          эффективным и гибким. Очень доволен результатами!
+                        </p>
+                        <div className="card-bottom-info">
+                          <span className="font-xs color-grey-500 date-post">
+                            29 декабря 2023
+                          </span>
+                          <div className="rating text-end">
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mb-30">
+                      <div className="card-testimonial-grid">
+                        <div className="box-author mb-10">
+                          <Link href="#">
+                            <img
+                              src="/assets/imgs/page/homepage2/author4.png"
+                              alt="iori"
+                            />
+                          </Link>
+                          <div className="author-info">
+                            <Link href="#">
+                              <span className="font-md-bold color-brand-1 author-name">
+                                Эмилия Петрова
+                              </span>
+                            </Link>
+                            <span className="font-xs color-grey-500 department"></span>
+                          </div>
+                        </div>
+                        <p className="font-md color-grey-500">
+                          Присоединившись к этой платформе, я получила
+                          возможность структурировать свой онлайн-бизнес так,
+                          как мне удобно, и доверить выполнение работы опытным
+                          профессионалам. Это дало моему бизнесу заметный толчок
+                          в развитии. Благодарю!
+                        </p>
+                        <div className="card-bottom-info">
+                          <span className="font-xs color-grey-500 date-post">
+                            29 ноября 2023
+                          </span>
+                          <div className="rating text-end">
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="/assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border-bottom" />
+        </section>
+
+        <section className="section pt-80 mb-30">
+          <div className="container">
+            <div className="text-center">
+              <h2 className="color-brand-1 mb-20" id="FAQ">
+                Часто задаваемые вопросы
+              </h2>
+              <p className="font-lg color-gray-500">
+                <b>Как выбрать подходящий тариф?</b>
+                <br className="d-none d-lg-block" /> Оцените свои потребности и
+                выберите тариф,
+                <br className="d-none d-lg-block" /> соответствующий вашим
+                требованиям.{" "}
+              </p>
+            </div>
+            <div className="row mt-50 mb-50">
+              <div className="col-xl-2 col-lg-2" />
+              <div className="col-xl-8 col-lg-8 position-relative">
+                <div className="box-author-1">
+                  <img src="assets/imgs/page/homepage6/author.png" alt="iori" />
+                </div>
+                <div className="box-author-2">
+                  <img
+                    src="assets/imgs/page/homepage6/author2.png"
+                    alt="iori"
+                  />
+                </div>
+                <div className="box-author-3">
+                  <img
+                    src="assets/imgs/page/homepage6/author3.png"
+                    alt="iori"
+                  />
+                </div>
+                <Accordion />
+              </div>
+            </div>
+          </div>
+          <div className="border-bottom" />
+        </section>
+
+        {/* <section className="section pt-80 mb-30 bg-faqs">
           <div className="container">
             <div className="row align-items-end">
               <div className="col-lg-8 col-md-8">
@@ -1562,7 +1970,7 @@ const HomePage1 = () => {
                   <Link className="btn btn-brand-1 hover-up" href="#">
                     Связаться с нами
                   </Link>
-                  {/* <a className="btn btn-default font-sm-bold hover-up" href="#">
+                  <a className="btn btn-default font-sm-bold hover-up" href="#">
                     Центр поддержки
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -1578,7 +1986,7 @@ const HomePage1 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a> */}
+                  </a>
                 </div>
               </div>
               <div className="col-xl-9 col-lg-8">
@@ -1633,7 +2041,8 @@ const HomePage1 = () => {
             </div>
           </div>
           <div className="border-bottom" />
-        </section>
+        </section> */}
+
         <section className="section mt-50 mb-30">
           <div className="container">
             <div className="text-center mb-70">
@@ -1674,7 +2083,8 @@ const HomePage1 = () => {
                 {" "}
                 {/* <span className="btn btn-tag">Бизнес</span> */}
                 <h3 className="color-brand-1 mt-10 mb-15">
-                  Создать свой онлайн-бизнес, не беспокоясь о технической части.
+                  Создать свой онлайн-бизнес, не беспок оясь о технической
+                  части.
                 </h3>
                 <p className="font-md color-grey-400"></p>
                 <div className="mt-20">
@@ -1965,6 +2375,7 @@ const HomePage1 = () => {
             </div>
           </div>
         </section> */}
+
         {/* <section className="section mt-50">
           <div className="container">
             <div className="row align-items-end">
@@ -2438,10 +2849,418 @@ const HomePage1 = () => {
           </div>
         </section> */}
 
+        <section className="section mt-50">
+          <div className="container">
+            <div className="row align-items-end">
+              <div className="col-lg-8 col-md-8">
+                <h2 className="color-brand-1 mb-20" id="blog">
+                  Из нашего блога
+                </h2>
+                <p className="font-lg color-gray-500">
+                  Добро пожаловать в наш мир!{" "}
+                  <br className="d-none d-lg-block" />
+                  Наша миссия - делать вашу жизнь легче, предоставляя
+                  инновационные решения. Узнайте больше о нас и том, как мы
+                  можем сделать ваш опыт неповторимым.
+                </p>
+              </div>
+              {/* <div className="col-lg-4 col-md-4 text-md-end text-start">
+                <a className="btn btn-default font-sm-bold pl-0">
+                  View All
+                  <svg
+                    className="w-6 h-6 icon-16 ml-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </a>
+              </div> */}
+            </div>
+            <div className="row mt-55">
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="blog-detail">
+                      <img
+                        src="assets/imgs/page/homepage2/news1.png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="blog-detail">
+                      <h6 className="color-brand-1">
+                        Эффективно запустить свой онлайн-бизнес
+                      </h6>
+                    </Link>
+                    <p className="font-sm color-grey-500 mt-20">
+                      Узнайте, как современные предприниматели преуспевают в
+                      онлайн-бизнесе. Мы расскажем о стратегиях, которые помогли
+                      другим, и дадим советы, как избежать распространенных{" "}
+                      <br /> ошибок.
+                    </p>
+                    <div className="mt-20 d-flex align-items-center border-top pt-20">
+                      {/* <Link
+                        className="btn btn-border-brand-1 mr-15"
+                        href="blog"
+                      >
+                        Technology
+                      </Link> */}
+                      <span className="date-post font-xs color-grey-300 mr-15">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        30 Maя 2023
+                      </span>
+                      <span className="time-read font-xs color-grey-300">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        4 минуты чтения
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="blog-detail">
+                      <img
+                        src="assets/imgs/page/homepage2/news2.png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="blog-detail">
+                      <h6 className="color-brand-1">
+                        Освойте Онлайн-Предпринимательство
+                      </h6>
+                    </Link>
+                    <p className="font-sm color-grey-500 mt-20">
+                      Присоединяйтесь к нашей платформе и позвольте
+                      профессионалам выполнять вашу работу. Узнайте, как
+                      преуспеть в онлайн-бизнесе, изучая стратегии успешных
+                      предпринимателей и учитывая опыт других
+                    </p>
+                    <div className="mt-20 d-flex align-items-center border-top pt-20">
+                      {/* <Link
+                        className="btn btn-border-brand-1 mr-15"
+                        href="blog"
+                      >
+                        Marketting
+                      </Link> */}
+                      <span className="date-post font-xs color-grey-300 mr-15">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        30 января 2024
+                      </span>
+                      <span className="time-read font-xs color-grey-300">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        6 минуты чтения
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="blog-detail">
+                      <img
+                        src="assets/imgs/page/homepage1/news2.png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="blog-detail">
+                      <h6 className="color-brand-1">
+                        Успешный Запуск Онлайн-Бизнеса
+                      </h6>
+                    </Link>
+                    <p className="font-sm color-grey-500 mt-20">
+                      Присоединяйтесь к нашей платформе и позвольте
+                      профессионалам выполнять вашу работу. Узнайте, как успешно
+                      запустить свой онлайн-бизнес, избегая распространенных
+                      ошибок и освоив стратегии успеха.
+                    </p>
+                    <div className="mt-20 d-flex align-items-center border-top pt-20">
+                      {/* <Link
+                        className="btn btn-border-brand-1 mr-15"
+                        href="blog"
+                      >
+                        Media
+                      </Link> */}
+                      <span className="date-post font-xs color-grey-300 mr-15">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        20 января 2024
+                      </span>
+                      <span className="time-read font-xs color-grey-300">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        4 минуты чтения
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="blog-detail">
+                      <img
+                        src="assets/imgs/page/homepage2/news3.png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="blog-detail">
+                      <h6 className="color-brand-1">
+                        Запускайте Онлайн-Бизнес Эффективно
+                      </h6>
+                    </Link>
+                    <p className="font-sm color-grey-500 mt-20">
+                      Присоединяйтесь к нашей платформе и позвольте
+                      профессионалам выполнять вашу работу. Узнайте, как
+                      успешные предприниматели добиваются успеха в
+                      онлайн-бизнесе, избегая распространенных ошибок
+                    </p>
+                    <div className="mt-20 d-flex align-items-center border-top pt-20">
+                      {/* <Link
+                        className="btn btn-border-brand-1 mr-15"
+                        href="blog"
+                      >
+                        SEO
+                      </Link> */}
+                      <span className="date-post font-xs color-grey-300 mr-15">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        10 января 2024
+                      </span>
+                      <span className="time-read font-xs color-grey-300">
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        5 минуты чтения
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section pt-0 pb-50 bg-core-value bg-7 mb-40 mt-100">
+          <div className="container">
+            <div className="row box-list-core-value">
+              <div className="col-lg-4 mb-70">
+                <div className="box-core-value pl-0">
+                  <h1 className="color-brand-1 mb-15">Главные ценности</h1>
+                  <p
+                    className="font-md color-grey-400"
+                    style={{ paddingTop: "10px" }}
+                  >
+                    Ценности, Которые Продвигают Вас: Фундамент для Успешного
+                    Онлайн-Бизнеса
+                  </p>
+                  {/* <div className="mt-30"> <Link className="btn btn-white-circle font-sm-bold border-brand" href="/#">JOIN OUR TEAM TODAY</Link></div> */}
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <ul className="list-core-value list-core-value-white">
+                  <li>
+                    {" "}
+                    <span className="ticked" />
+                    <h5 className="color-brand-1 mb-5">Главные Цели</h5>
+                    <div className="box-border-dashed">
+                      <p className="font-md color-grey-500 mb-20">
+                        Создание решения для электронной коммерции,
+                        соответствующего вашим деловым ценностям и динамике
+                        рынка
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    {" "}
+                    <span className="ticked" />
+                    <h5 className="color-brand-1 mb-5">Основные Идеалы</h5>
+                    <div className="box-border-dashed">
+                      <p className="font-md color-grey-500 mb-20">
+                        Разработка решения для электронной коммерции,
+                        соответствующего вашим этическим принципам и развитию
+                        рынка
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    {" "}
+                    <span className="ticked" />
+                    <h5 className="color-brand-1 mb-5">Критические Ценности</h5>
+                    <div className="box-border-dashed">
+                      <p className="font-md color-grey-500 mb-20">
+                        Создание решения для электронной коммерции,
+                        соответствующего вашим основным ценностям и развитию
+                        рынка
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-4">
+                <ul className="list-core-value list-core-value-white">
+                  <li>
+                    {" "}
+                    <span className="ticked" />
+                    <h5 className="color-brand-1 mb-5">Ключевые Принципы</h5>
+                    <div className="box-border-dashed">
+                      <p className="font-md color-grey-500 mb-20">
+                        Создание решения для электронной коммерции,
+                        соответствующего вашим деловым принципам и развитию
+                        рынка
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    {" "}
+                    <span className="ticked" />
+                    <h5 className="color-brand-1 mb-5">Важные Нормы</h5>
+                    <div className="box-border-dashed">
+                      <p className="font-md color-grey-500 mb-20">
+                        Разработайте решение для электронной коммерции,
+                        строящееся на ваших нравственных ценностях и росте рынка
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    {" "}
+                    <span className="ticked" />
+                    <h5 className="color-brand-1 mb-5">Ценные Основы</h5>
+                    <div className="box-border-dashed">
+                      <p className="font-md color-grey-500 mb-20">
+                        Создание решения для электронной коммерции, основанного
+                        на ваших ключевых ценностях и динамике рынка
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="section mt-50 mb-50">
           <div className="container">
             <div className="row align-items-start">
-              <p>НАШИ ПРЕМИУМ-КЛИЕНТЫ</p>
+              <p style={{ fontSize: "20px", marginBottom: "15px" }}>
+                НАШИ ПРЕМИУМ-КЛИЕНТЫ
+              </p>
               <h3>Мы имели удовольствие Работать с</h3>
             </div>
 
