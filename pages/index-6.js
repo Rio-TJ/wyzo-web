@@ -230,7 +230,7 @@ const HomePage6 = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
-                <h2 className="color-brand-1 mb-20">What We Offer</h2>
+                <h2 className="color-brand-1 mb-20">what we offer</h2>
                 <p className="font-lg color-gray-500">
                   What makes us different from others? We give holistic
                   solutions

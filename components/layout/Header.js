@@ -337,7 +337,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       <a href="#FAQ">Часто задаваемые вопросы</a>
                     </li>
                     <li className="has-children">
-                      {/* <a href="#blog">Блог</a> */}
+                      <a href="#blog">Блог</a>
                       {/* <ul className="sub-menu">
                         <li>
                         
