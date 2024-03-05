@@ -1515,7 +1515,7 @@ const HomePage1 = () => {
                           <div className="author-info">
                             <Link href="#">
                               <span className="font-md-bold color-brand-1 author-name">
-                                Эмилия Петрова
+                                Михаил Васильев
                               </span>
                             </Link>
                             <span className="font-xs color-grey-500 department"></span>
