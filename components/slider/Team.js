@@ -6,49 +6,49 @@ SwiperCore.use([Autoplay, Navigation]);
 const Team = () => {
   const data = [
     {
-        title: "Кроссплатформенное (Иванов)",
-        color: "",
-        color2: "bg1",
-        img: "member.png",
-        work: "программист"
+      title: "Кроссплатформенное (Иванов)",
+      color: "",
+      color2: "bg1",
+      img: "member.png",
+      work: "программист",
     },
     {
-        title: "Кроссплатформенное (Петров)",
-        color: "bg-2",
-        color2: "bg-1",
-        img: "member1.png",
-        work: "дизайнер"
+      title: "Кроссплатформенное (Петров)",
+      color: "bg-2",
+      color2: "bg-1",
+      img: "member1.png",
+      work: "дизайнер",
     },
     {
-        title: "Стратегия бизнеса (Сидоров)",
-        color: "bg-5",
-        color2: "bg-4",
-        img: "member2.png",
-        work: "менеджер"
+      title: "Стратегия бизнеса (Сидоров)",
+      color: "bg-5",
+      color2: "bg-4",
+      img: "member2.png",
+      work: "менеджер",
     },
     {
-        title: "Локальный маркетинг (Иванова)",
-        color: "bg-1",
-        color2: "bg-3",
-        img: "member3.png",
-        work: "аналитик"
+      title: "Локальный маркетинг (Иванова)",
+      color: "bg-1",
+      color2: "bg-3",
+      img: "member3.png",
+      work: "аналитик",
     },
     {
-        title: "Социальные медиа (Козлов)",
-        color: "bg-4",
-        color2: "bg-2",
-        img: "member4.png",
-        work: "разработчик"
+      title: "Социальные медиа (Козлов)",
+      color: "bg-4",
+      color2: "bg-2",
+      img: "member4.png",
+      work: "разработчик",
     },
     {
-        title: "Социальные медиа (Смирнова)",
-        color: "bg-7",
-        color2: "bg-5",
-        img: "member5.png",
-        work: "тестировщик"
-    }
-];
-return (
+      title: "Социальные медиа (Смирнова)",
+      color: "bg-7",
+      color2: "bg-5",
+      img: "member5.png",
+      work: "тестировщик",
+    },
+  ];
+  return (
     <>
       <Swiper
         slidesPerView={6}
@@ -92,6 +92,7 @@ return (
       >
         {data.map((item, i) => (
           <SwiperSlide class="swiper-slide">
+           
             <div className={`card-member-2 mb-30 ${item.color}`}>
               <div className="card-image">
                 <img
@@ -112,6 +113,7 @@ return (
                   </div>
                 </div>
               </div>
+              
             </div>
           </SwiperSlide>
         ))}

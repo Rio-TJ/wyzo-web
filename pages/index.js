@@ -49,22 +49,6 @@ const HomePage1 = () => {
                       <br className="d-none d-lg-block" /> вашему бизнесу и
                       расширяться вместе с вашим рынком.
                     </p>
-                    {/* <div className="text-center">
-                      {" "}
-                      <Link href="#">
-                        <img
-                          className="mr-10"
-                          src="/assets/imgs/template/appstore.png"
-                          alt="iori"
-                        />
-                      </Link>
-                      <Link href="#">
-                        <img
-                          src="/assets/imgs/template/google-play.png"
-                          alt="iori"
-                        />
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -140,7 +124,9 @@ const HomePage1 = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
-                <h2 className="color-brand-1 mb-20" id="offer">Что мы предлагаем</h2>
+                <h2 className="color-brand-1 mb-20" id="offer">
+                  Что мы предлагаем
+                </h2>
                 <p className="font-lg color-gray-500">
                   Мы используем новейшие технологии, включая решения
                   искусственного <br className="d-none d-lg-block" />{" "}
@@ -434,30 +420,12 @@ const HomePage1 = () => {
                   идеям.
                 </p>
               </div>
-              {/* <div className="col-lg-4 col-md-4 text-md-end text-start">
-                <a className="btn btn-default font-sm-bold pl-0">
-                  Сравнить планы
-                  <svg
-                    className="w-6 h-6 icon-16 ml-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </a>
-              </div> */}
+
               <ul className="tabs-plan change-price-plan" role="tablist">
                 <li>
                   {" "}
                   <a
-                    style={{ marginRight: "7px" }}
+                    style={{ marginRight: "7px", cursor: "pointer" }}
                     className={pricing === 1 ? "active" : ""}
                     onClick={() => handlePricing(1)}
                   >
@@ -467,6 +435,7 @@ const HomePage1 = () => {
                 <li>
                   {" "}
                   <a
+                    style={{ cursor: "pointer" }}
                     className={pricing === 2 ? "active" : ""}
                     onClick={() => handlePricing(2)}
                   >
@@ -1046,191 +1015,7 @@ const HomePage1 = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="card-plan card-plan-2 hover-up">
-                  <div className="card-image-plan">
-                    <div className="icon-plan bg-2">
-                      <img
-                        src="assets/imgs/page/homepage1/business.svg"
-                        alt="iori"
-                      />
-                    </div>
-                    <div className="info-plan">
-                      <h4 className="color-brand-1">Business</h4>
-                      <p className="font-md color-grey-400">
-                        Protect for testing
-                      </p>
-                    </div>
-                  </div>
-                  <div className="box-day-trial">
-                    <span className="font-lg-bold color-brand-1">$99</span>
-                    <span className="font-md color-grey-500">
-                      - user / month
-                    </span>
-                    <br />
-                    <span className="font-xs color-grey-500">One-time pay</span>
-                  </div>
-                  <div className="mt-30 mb-30">
-                    <ul className="list-ticks list-ticks-2">
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Brand Awareness Ads
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Retargeting Ads
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Contextual, Demographic
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Facebook Advertising
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Global Certificates
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Snapchat Advertising
-                      </li>
-                      <li className="mutted">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M6 18L18 6M6 6l12 12"
-                          />
-                        </svg>
-                        TikTok Advertising
-                      </li>
-                      <li className="mutted">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M6 18L18 6M6 6l12 12"
-                          />
-                        </svg>
-                        Advanced List Building
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mt-20">
-                    <Link className="btn btn-brand-1-full hover-up" href="#">
-                      Get Started
-                      <svg
-                        className="w-6 h-6 icon-16 ml-10"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
-              </div> */}
+
               <div className="col-xl-4 col-lg-6 col-md-6">
                 <div className="card-plan hover-up">
                   <div className="card-image-plan">
@@ -1797,19 +1582,78 @@ const HomePage1 = () => {
               <div className="col-xl-2 col-lg-2" />
               <div className="col-xl-8 col-lg-8 position-relative">
                 <div className="box-author-1">
-                  <img src="assets/imgs/page/homepage6/author.png" alt="iori" />
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <filter id="shadow">
+                      <feDropShadow
+                        dx="2"
+                        dy="2"
+                        stdDeviation="20"
+                        floodColor="green"
+                      />
+                    </filter>
+                    <image
+                      href="assets/imgs/page/homepage6/autho.png"
+                      height="150"
+                      width="150"
+                      style={{ filter: "url(#shadow)" }}
+                    />
+                  </svg>
                 </div>
                 <div className="box-author-2">
-                  <img
-                    src="assets/imgs/page/homepage6/author2.png"
-                    alt="iori"
-                  />
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <filter
+                      id="shadow2"
+                      width="1000px"
+                      height="562px"
+                      x="-50%"
+                      y="-300%"
+                    >
+                      <feDropShadow
+                        dx="4"
+                        dy="4"
+                        stdDeviation="12"
+                        floodColor="red"
+                      />
+                    </filter>
+                    <image
+                      href="assets/imgs/page/homepage6/aut.png"
+                      x="0"
+                      y="20"
+                      height="70"
+                      width="260"
+                      style={{ filter: "url(#shadow2)" }}
+                    />
+                  </svg>
                 </div>
                 <div className="box-author-3">
-                  <img
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <filter
+                      id="shadow3"
+                      width="1000px"
+                      height="562px"
+                      x="-50%"
+                      y="-300%"
+                    >
+                      <feDropShadow
+                        dx="4"
+                        dy="4"
+                        stdDeviation="12"
+                        floodColor="yellow"
+                      />
+                    </filter>
+                    <image
+                      href="assets/imgs/page/homepage6/autho2.png"
+                      x="0"
+                      y="20"
+                      height="75"
+                      width="260"
+                      style={{ filter: "url(#shadow3)" }}
+                    />
+                  </svg>
+                  {/* <img
                     src="assets/imgs/page/homepage6/author3.png"
                     alt="iori"
-                  />
+                  /> */}
                 </div>
                 <Accordion />
               </div>
