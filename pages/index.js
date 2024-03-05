@@ -1399,7 +1399,7 @@ const HomePage1 = () => {
                         <div className="box-author mb-10">
                           <Link href="#">
                             <img
-                              src="/assets/imgs/page/homepage2/author2.png"
+                              src="/assets/imgs/page/homepage2/person1.jpg"
                               alt="iori"
                             />
                           </Link>
@@ -1507,7 +1507,8 @@ const HomePage1 = () => {
                         <div className="box-author mb-10">
                           <Link href="#">
                             <img
-                              src="/assets/imgs/page/homepage2/author4.png"
+                              // style={{ width: "50px" ,height: "50px" }}
+                              src="/assets/imgs/page/homepage2/person40.jpg"
                               alt="iori"
                             />
                           </Link>
@@ -2801,7 +2802,8 @@ const HomePage1 = () => {
                   <div className="card-image">
                     <Link href="blog-detail">
                       <img
-                        src="assets/imgs/page/homepage2/news2.png"
+                        style={{ width: "100%", height: "200px" }}
+                        src="assets/imgs/page/homepage2/img-job.png"
                         alt="iori"
                       />
                     </Link>
