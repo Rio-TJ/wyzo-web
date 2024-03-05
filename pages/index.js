@@ -1507,7 +1507,7 @@ const HomePage1 = () => {
                         <div className="box-author mb-10">
                           <Link href="#">
                             <img
-                              // style={{ width: "50px" ,height: "50px" }}
+                              // style={{ height: "400px" }}
                               src="/assets/imgs/page/homepage2/person40.jpg"
                               alt="iori"
                             />
@@ -2802,8 +2802,8 @@ const HomePage1 = () => {
                   <div className="card-image">
                     <Link href="blog-detail">
                       <img
-                        style={{ width: "100%", height: "200px" }}
-                        src="assets/imgs/page/homepage2/img-job.png"
+                        // style={{ height: "25vh" }}
+                        src="assets/imgs/page/homepage2/news2.png"
                         alt="iori"
                       />
                     </Link>
