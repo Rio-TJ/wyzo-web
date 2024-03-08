@@ -1,0 +1,58 @@
+/* Custom modal style */
+.custom-modal .modal-dialog {
+  max-width: 1000px !important; /* Set maximum width of modal */
+}
+
+.m {
+  display: flex;
+  justify-content: space-between;
+  /* gap: "5px"; */
+}
+
+.zcwf_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 576px) {
+  .m {
+    display: block;
+    /* width: calc(100% - 50%); */
+  }
+  .zcwf_row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.custom-modal .modal-content {
+  width: 100%; /* Ensure modal content fills modal dialog */
+}
+
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  padding: 15px; /* Add padding to header and footer */
+}
+
+.custom-modal .modal-body {
+  padding: 20px; /* Add padding to body */
+}
+
+.custom-modal .modal-title {
+  font-size: 24px; /* Set font size for modal title */
+}
+
+.custom-modal .form-group {
+  margin-bottom: 20px; /* Add margin between form groups */
+}
+
+.custom-modal .btn-primary {
+  background-color: #007bff; /* Set background color for primary button */
+  border-color: #007bff; /* Set border color for primary button */
+}
+
+.custom-modal .btn-primary:hover {
+  background-color: #0056b3; /* Set hover background color for primary button */
+  border-color: #0056b3; /* Set hover border color for primary button */
+}
+
+/* You can add more styles as needed */

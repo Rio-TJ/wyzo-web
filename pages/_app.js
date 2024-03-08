@@ -3,8 +3,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import '../public/assets/css/style.css';
 import "react-modal-video/css/modal-video.css"
+import "../public/assets/css/Zoho.css"
 import { useEffect, useState } from "react";
 import Preloader from '../components/elements/Preloader';
+
 
 function MyApp({ Component, pageProps }) {
     const [loading, setLoading] = useState(false);
