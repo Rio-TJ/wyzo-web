@@ -7,7 +7,7 @@ const pageAbout = () => {
     return (
         <>
             <Head>
-                <title>iori - About Us</title>
+                <title>Wyzo - About Us</title>
             </Head>
             <Layout>
                 <section className="section pt-90 banner-about">

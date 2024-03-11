@@ -120,6 +120,7 @@ const HomePage1 = () => {
             </div>
           </div>
         </section>
+        
         <section className="section mt-100">
           <div className="container">
             <div className="row">

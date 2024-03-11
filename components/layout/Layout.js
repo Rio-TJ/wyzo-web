@@ -58,10 +58,7 @@ const Layout = ({ children }) => {
         addClass="header-home7"
       />
       <Sidebar openClass={openClass} />
-      <main className="main">
-        <ZohoForm />
-        {children}
-      </main>
+      <main className="main">{children}</main>
       {/* <Footer /> */}
       <BackToTop />
     </>

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import ZohoForm from "./ZohoForm";
 
 const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
   const [scroll, setScroll] = useState(0);
+  const [open, setOpen] = useState(false);
   const [isSearchToggled, setSearchToggled] = useState(false);
   const [isLanguageToggled, setLanguageToggled] = useState(false);
   const toggleSearchTrueFalse = () => setSearchToggled(!isSearchToggled);
@@ -432,13 +434,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                     </div>
                                 </div> */}
                 <div className="d-none d-sm-inline-block">
-                  <Link
-                    className="btn btn-brand-1 hover-up"
-                    target="_blank"
-                    href="https://form.jotform.com/240440877477465"
-                  >
-                    Начать
-                  </Link>
+                  <ZohoForm open={open} setOpen={setOpen} />
                 </div>
               </div>
             </div>
