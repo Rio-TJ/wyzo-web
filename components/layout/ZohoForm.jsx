@@ -8,9 +8,17 @@ import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
-import { Box, TextField, Modal, Backdrop } from "@mui/material";
+import {
+  Box,
+  TextField,
+  Modal,
+  Backdrop,
+  Autocomplete,
+  InputAdornment,
+  InputLabel,
+} from "@mui/material";
 import { Toaster } from "react-hot-toast";
-
+import SearchIcon from "@mui/icons-material/Search";
 // import { styled } from "@mui/material/styles";
 
 import toast from "react-hot-toast";
@@ -57,8 +65,51 @@ const ColorButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+const top100Films2 = [
+  "CTO",
+  "CEO",
+  "Head of IT department",
+  "Product Manager",
+  "Product Owner",
+  "Business developer",
+  "Procurement manager",
+  "Other",
+];
+const top100Films = ["РФ", "Казахстан", "Узбекистан", "Таджикистан"];
+
 function ZohoForm({ open, setOpen }) {
   const modalRef = useRef(null);
+  const [selectCity, setSelectCity] = useState(null);
+  const [selectCity2, setSelectCity2] = useState(null);
+
+  const [formData, setFormData] = useState({
+    Company: "",
+    First_Name: "",
+    Last_Name: "",
+    // City: "",
+    // City: "",
+    // Position: "",
+    Email: "",
+    Phone: "",
+    Mobile: "",
+  });
+
+  const handleSelectCity = (event, value, name) => {
+    console.log(event, value);
+    setSelectCity(value);
+    setFormData((prevState) => ({
+      ...prevState,
+      City: value,
+    }));
+  };
+  const handleSelectCity2 = (event, value) => {
+    setSelectCity2(value);
+    setFormData((prevState) => ({
+      ...prevState,
+      Position: value,
+    }));
+  };
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -66,26 +117,28 @@ function ZohoForm({ open, setOpen }) {
     setOpen(false);
   };
 
-  const [formData, setFormData] = useState({
-    Company: "",
-    First_Name: "",
-    Last_Name: "",
-    City: "",
-    Email: "",
-    Phone: "",
-    Mobile: "",
-  });
-
   function handleChange(event) {
+    console.log(event);
     const { name, value } = event.target;
+    console.log(name, value);
+
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
+      City: selectCity,
+      Position: selectCity2,
     }));
   }
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    setFormData((prevState) => ({
+      ...prevState,
+      City: selectCity,
+      Position: selectCity2,
+    }));
+    console.log(formData);
     if (checkMandatory()) {
       // Send data to server
       // alert("Данные успешно отправлены!");
@@ -98,6 +151,7 @@ function ZohoForm({ open, setOpen }) {
         First_Name: "",
         Last_Name: "",
         City: "",
+        Position: "",
         Email: "",
         Phone: "",
         Mobile: "",
@@ -106,14 +160,46 @@ function ZohoForm({ open, setOpen }) {
   }
 
   function checkMandatory() {
-    const mandatoryFields = ["Company", "First_Name", "Last_Name", "Phone"];
+    const mandatoryFields = [
+      "Company",
+      "First_Name",
+      "Email",
+      "Phone",
+      // "Position",
+    ];
+
     for (let field of mandatoryFields) {
       if (!formData[field]) {
-        toast.error(`${field} не может быть пустым.`);
-        // alert(`${field} не может быть пустым.`);
+        toast.error(
+          `${
+            field == "Company"
+              ? "Компании"
+              : field == "First_Name"
+              ? "Ваша имя"
+              : field == "Phone"
+              ? "Телефон"
+              : field == "Email"
+              ? "Электронная почта"
+              : "ы"
+          } не может быть пустым.`
+        );
+
+        return false;
+      }
+      if (!selectCity) {
+        toast.error(`Город не может быть пустым.`);
+        return false;
+      }
+      if (!selectCity2) {
+        toast.error(`Ваша должность не может быть пустым.`);
         return false;
       }
     }
+    setFormData((prevState) => ({
+      ...prevState,
+      City: selectCity,
+      Position: selectCity2,
+    }));
     return true;
   }
 
@@ -170,7 +256,7 @@ function ZohoForm({ open, setOpen }) {
                       fullWidth
                       sx={{ mb: 2 }} // Add margin bottom
                     />
-                    <TextField
+                    {/* <TextField
                       label="Ваша фамилия"
                       variant="outlined"
                       name="Last_Name"
@@ -178,8 +264,37 @@ function ZohoForm({ open, setOpen }) {
                       onChange={handleChange}
                       fullWidth
                       sx={{ mb: 2 }} // Add margin bottom
+                    /> */}
+                    <Autocomplete
+                      disablePortal
+                      id="combo-box-demo"
+                      options={top100Films}
+                      // sx={{ width: 300 }}
+                      value={selectCity}
+                      name="City"
+                      onChange={handleSelectCity}
+                      renderInput={(params) => (
+                        <TextField
+                          {...params}
+                          fullWidth
+                          label="Город"
+                          // value={formData.City}
+                          // onChange={handleChange}
+                        />
+                      )}
                     />
-                    <TextField
+                    <Autocomplete
+                      id="free-solo-demo"
+                      freeSolo
+                      value={selectCity2}
+                      name="Position"
+                      onChange={handleSelectCity2}
+                      options={top100Films2.map((option) => option)}
+                      renderInput={(params) => (
+                        <TextField {...params} label="Ваша должность" />
+                      )}
+                    />
+                    {/* <TextField
                       label="Город"
                       variant="outlined"
                       name="City"
@@ -187,9 +302,9 @@ function ZohoForm({ open, setOpen }) {
                       onChange={handleChange}
                       fullWidth
                       sx={{ mb: 2 }} // Add margin bottom
-                    />
+                    /> */}
                     <TextField
-                      label="Название вашей должности"
+                      label="Название компании"
                       variant="outlined"
                       name="Company"
                       value={formData.Company}
@@ -216,13 +331,33 @@ function ZohoForm({ open, setOpen }) {
                       sx={{ mb: 2 }} // Add margin bottom
                     />
                     <TextField
-                      label="Реферальный номер"
+                      label="Номер телефона реферала"
                       variant="outlined"
                       name="Mobile"
                       value={formData.Mobile}
                       onChange={handleChange}
                       fullWidth
                       sx={{ mb: 2 }} // Add margin bottom
+                      InputProps={{
+                        startAdornment: (
+                          <InputAdornment position="start">
+                            <SearchIcon />
+                          </InputAdornment>
+                        ),
+                      }}
+                      InputLabelProps={{
+                        shrink: true,
+                        snap: true,
+                        floating: true,
+                        margin: "20px",
+                        startAdornment: (
+                          <InputAdornment position="start">
+                            <InputLabel htmlFor="outlined-adornment-mobile">
+                              Номер телефона реферала
+                            </InputLabel>
+                          </InputAdornment>
+                        ),
+                      }}
                     />
                   </div>
                 </DialogContent>
