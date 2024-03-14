@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, Fragment } from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
@@ -19,6 +19,7 @@ import {
 } from "@mui/material";
 import { Toaster } from "react-hot-toast";
 import SearchIcon from "@mui/icons-material/Search";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 // import { styled } from "@mui/material/styles";
 
 import toast from "react-hot-toast";
@@ -81,11 +82,12 @@ function ZohoForm({ open, setOpen }) {
   const modalRef = useRef(null);
   const [selectCity, setSelectCity] = useState(null);
   const [selectCity2, setSelectCity2] = useState(null);
+  const [inputValue, setInputValue] = useState(""); // State to store user-typed position
+  const [selectedValue, setSelectedValue] = useState(null); // State to store overall position value (selected or typed)
 
   const [formData, setFormData] = useState({
     Company: "",
     First_Name: "",
-    Last_Name: "",
     // City: "",
     // City: "",
     // Position: "",
@@ -94,12 +96,31 @@ function ZohoForm({ open, setOpen }) {
     Mobile: "",
   });
 
+  const handleSelectChange = (event, newValue) => {
+    setSelectedValue(newValue);
+    setSelectCity2(newValue); // Update position state with selected value
+    setFormData((prevState) => ({
+      ...prevState,
+      Position: newValue,
+    }));
+  };
+
+  const handleInputChange = (event, newValue) => {
+    setInputValue(newValue);
+    setSelectedValue(newValue); // Update position state with typed value
+    setFormData((prevState) => ({
+      ...prevState,
+      Position: newValue,
+    }));
+  };
+
   const handleSelectCity = (event, value, name) => {
     console.log(event, value);
     setSelectCity(value);
     setFormData((prevState) => ({
       ...prevState,
       City: value,
+      Position: selectedValue,
     }));
   };
   const handleSelectCity2 = (event, value) => {
@@ -126,7 +147,7 @@ function ZohoForm({ open, setOpen }) {
       ...prevState,
       [name]: value,
       City: selectCity,
-      Position: selectCity2,
+      Position: selectedValue,
     }));
   }
 
@@ -136,7 +157,7 @@ function ZohoForm({ open, setOpen }) {
     setFormData((prevState) => ({
       ...prevState,
       City: selectCity,
-      Position: selectCity2,
+      Position: selectedValue,
     }));
     console.log(formData);
     if (checkMandatory()) {
@@ -145,11 +166,12 @@ function ZohoForm({ open, setOpen }) {
       toast.success("Данные успешно отправлены!");
 
       handleClose();
-
+      setSelectCity(null);
+      setInputValue("");
+      setSelectedValue(null);
       setFormData({
         Company: "",
         First_Name: "",
-        Last_Name: "",
         City: "",
         Position: "",
         Email: "",
@@ -190,7 +212,7 @@ function ZohoForm({ open, setOpen }) {
         toast.error(`Город не может быть пустым.`);
         return false;
       }
-      if (!selectCity2) {
+      if (!selectedValue) {
         toast.error(`Ваша должность не может быть пустым.`);
         return false;
       }
@@ -198,7 +220,7 @@ function ZohoForm({ open, setOpen }) {
     setFormData((prevState) => ({
       ...prevState,
       City: selectCity,
-      Position: selectCity2,
+      Position: selectedValue,
     }));
     return true;
   }
@@ -219,10 +241,25 @@ function ZohoForm({ open, setOpen }) {
                 open={open}
               > */}
               <DialogTitle
-                sx={{ m: 0, p: 1, fontSize: "25px" }}
+                sx={{
+                  m: 0,
+                  p: 1.5,
+                  fontSize: "25px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
                 id="customized-dialog-title"
               >
-                Начните свой онлайн-бизнес сегодня
+                <p style={{ fontSize: "26px", fontWeight: 500 }}>
+                  {" "}
+                  Начните свой онлайн-бизнес сегодня
+                </p>
+                <img
+                  alt="Ecom"
+                  src="assets/imgs/template/fin2.svg"
+                  style={{ width: "100px", height: "25px" }}
+                />
               </DialogTitle>
               <IconButton
                 aria-label="close"
@@ -284,14 +321,19 @@ function ZohoForm({ open, setOpen }) {
                       )}
                     />
                     <Autocomplete
-                      id="free-solo-demo"
-                      freeSolo
-                      value={selectCity2}
-                      name="Position"
-                      onChange={handleSelectCity2}
-                      options={top100Films2.map((option) => option)}
+                      value={selectedValue} // Use selectedValue to represent overall position
+                      onChange={handleSelectChange}
+                      inputValue={inputValue}
+                      onInputChange={handleInputChange}
+                      options={top100Films2} // Predefined positions
+                      freeSolo // Allow users to type their own position
                       renderInput={(params) => (
-                        <TextField {...params} label="Ваша должность" />
+                        <TextField
+                          {...params}
+                          label="Ваша должность"
+                          variant="outlined"
+                          // InputLabelProps={{ shrink: true }}
+                        />
                       )}
                     />
                     {/* <TextField
@@ -330,60 +372,64 @@ function ZohoForm({ open, setOpen }) {
                       fullWidth
                       sx={{ mb: 2 }} // Add margin bottom
                     />
+
                     <TextField
-                      label="Номер телефона реферала"
-                      variant="outlined"
                       name="Mobile"
                       value={formData.Mobile}
                       onChange={handleChange}
+                      sx={{ mb: 2 }}
                       fullWidth
-                      sx={{ mb: 2 }} // Add margin bottom
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <SearchIcon />
-                          </InputAdornment>
-                        ),
-                      }}
-                      InputLabelProps={{
-                        shrink: true,
-                        snap: true,
-                        floating: true,
-                        margin: "20px",
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <InputLabel htmlFor="outlined-adornment-mobile">
-                              Номер телефона реферала
-                            </InputLabel>
-                          </InputAdornment>
-                        ),
-                      }}
+                      required
+                      label={
+                        <Fragment>
+                          <InfoOutlinedIcon
+                            style={{
+                              paddingRight: "5px",
+                              order: 999,
+                              // fontSize: "20px",
+                            }}
+                            fontSize="medium"
+                          />
+                          <Typography style={{ display: "inline-block" }}>
+                            Номер телефона реферала
+                          </Typography>
+                        </Fragment>
+                      }
+                      variant="outlined"
                     />
                   </div>
                 </DialogContent>
                 <DialogActions>
                   <Button
-                    sx={{ mt: 1 }}
+                    sx={{
+                      mt: 1,
+                      border: "1px solid #6c757d",
+                      color: "#6c757d",
+                    }}
                     onClick={handleClose}
                     // type="submit"
                     // id="formsubmit"
                     autoFocus
                     contained
                     variant="outlined"
-                    color="success"
+                    // color="success"
                     className="formsubmit zcwf_button"
                     // onClick={handleClose}
                   >
                     Отмена
                   </Button>
                   <Button
-                    sx={{ mt: 1 }}
+                    sx={{
+                      mt: 1,
+                      backgroundColor: "#6c757d",
+                    }}
                     type="submit"
                     id="formsubmit"
                     autoFocus
                     contained
                     variant="contained"
-                    color="success"
+                    // color="success"
+
                     className="formsubmit zcwf_button"
                     // onClick={handleClose}
                   >
