@@ -3389,7 +3389,7 @@ const HomePage1 = () => {
           </div>
         </section>
 
-        <section className="section mt-50 mb-50">
+        {/* <section className="section mt-50 mb-50">
           <div className="container">
             <div className="row align-items-start">
               <p style={{ fontSize: "20px", marginBottom: "15px" }}>
@@ -3414,29 +3414,9 @@ const HomePage1 = () => {
                       </p>
                       <div className="mt-0">
                         {" "}
-                        {/* <Link
-                        target="_blank"
-                        href="https://panda.tj/"
-                        className="btn btn-brand-1-small"
-                      >
-                        Узнать больше
-                        <svg
-                          className="w-6 h-6 icon-16 ml-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </Link> */}
+                        
                       </div>
-                      {/* <img src={panda}></img> */}
+                     
                     </div>
                     <div className="card-image">
                       {" "}
@@ -3470,27 +3450,7 @@ const HomePage1 = () => {
                       </p>
                       <div className="mt-0">
                         {" "}
-                        {/* <Link
-                        className="btn btn-brand-1-small"
-                        target="_blank"
-                        href="https://podari.tj/"
-                      >
-                        Узнать больше
-                        <svg
-                          className="w-6 h-6 icon-16 ml-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </Link> */}
+                       
                       </div>
                     </div>
                     <div className="card-image">
@@ -3522,29 +3482,7 @@ const HomePage1 = () => {
                         Phone <br />
                         Case
                       </p>
-                      {/* <div className="text-center"> */}{" "}
-                      {/* <Link
-                        className="btn btn-brand-1-small"
-                        target="_blank"
-                        href="https://www.bonibicase.com"
-                      >
-                        Узнать больше
-                        <svg
-                          className="w-6 h-6 icon-16 ml-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </Link> */}
-                      {/* </div> */}
+                      
                     </div>
                     <div className="card-image">
                       {" "}
@@ -3555,7 +3493,7 @@ const HomePage1 = () => {
                           width: "90%",
                           borderRadius: "10px",
                           border: "2px solid white",
-                          // padding: "3px",
+                      
                         }}
                       />
                     </div>
@@ -3575,29 +3513,7 @@ const HomePage1 = () => {
                         <br />
                         hizmet
                       </p>
-                      {/* <div className="text-center"> */}{" "}
-                      {/* <Link
-                        className="btn btn-brand-1-small"
-                        target="_blank"
-                        href="https://roastingworks.com/"
-                      >
-                        Узнать больше
-                        <svg
-                          className="w-6 h-6 icon-16 ml-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </Link> */}
-                      {/* </div> */}
+                     
                     </div>
                     <div className="card-image">
                       {" "}
@@ -3617,7 +3533,7 @@ const HomePage1 = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="section mt-50">
           <div className="container">
