@@ -27,41 +27,204 @@ const HomePage1 = () => {
       </Head>
 
       <Layout>
-        <section className="section banner-8">
-          <div className="asset-1 shape-1" />
-          <div className="asset-2 shape-2" />
-          <div className="asset-3 shape-3" />
-          <div className="asset-4 shape-1" />
-          <div className="asset-5 shape-2" />
-          <div className="box-banner-home8">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-8 col-lg-10 m-auto">
-                  <div className="text-center">
-                    {" "}
-                    <span className="font-md color-grey-400"></span>
-                    <h1 className="color-brand-1 mb-25 mt-10">
-                      Начните свой онлайн-бизнес сегодня
-                    </h1>
-                    <p className="font-md color-grey-500 mb-25">
-                      Элегантно структурируйте решение для электронной
-                      коммерции, которое будет соответствовать
-                      <br className="d-none d-lg-block" /> вашему бизнесу и
-                      расширяться вместе с вашим рынком.
-                    </p>
+        <section className="section banner-6">
+          <div className="container">
+            <div className="row align-items-end">
+              <div className="col-xl-6 d-none d-xl-block">
+                <div className="box-banner-6">
+                  <div className="img-testimonials-1 shape-2">
+                    <div className="card-testimonial-list">
+                      <div className="d-flex align-items-center">
+                        <div className="box-author mb-0">
+                          <Link href="#">
+                            <img
+                              src="assets/imgs/page/homepage1/SZ3.png"
+                              alt="iori"
+                            />
+                          </Link>
+                        </div>
+                        <div
+                          style={{
+                            width: "270px",
+
+                            display: "flex",
+                            alignItems: "center",
+                            flexWrap: "wrap",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div className="author-info">
+                            <Link href="#">
+                              <span className="font-md-bold color-brand-1 author-name">
+                                Субхон Зухуров
+                              </span>
+                            </Link>
+                          </div>
+                          <div className="rating text-end">
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                          </div>
+                          <div>
+                            <p
+                              className="color-grey-500"
+                              style={{ fontSize: "13.5px" }}
+                            >
+                              Wyzo - идеальный сервис для бизнеса:гибкий,
+                              удобный, с вниманием к деталям.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <div className="img-testimonials-2 shape-1">
+                    {/* <img
+                      src="assets/imgs/page/homepage6/testimonial2.png"
+                      alt="iori"
+                    /> */}
+                    <div className="card-testimonial-list">
+                      <div className="d-flex align-items-center ">
+                        <div className="box-author mb-0">
+                          <Link href="#">
+                            <img
+                              src="assets/imgs/page/homepage1/Said2.jpg"
+                              alt="iori"
+                            />
+                          </Link>
+                        </div>
+                        <div
+                          style={{
+                            width: "310px",
+                            display: "flex",
+                            alignItems: "center",
+                            flexWrap: "wrap",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div className="author-info">
+                            <Link href="#">
+                              <span className="font-md-bold color-brand-1 author-name">
+                                Саидахтам Исмоилов
+                              </span>
+                            </Link>
+                          </div>
+                          <div className="rating text-end">
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                            <img
+                              src="assets/imgs/template/icons/star.svg"
+                              alt="iori"
+                            />
+                          </div>
+                          <div>
+                            <p
+                              style={{ fontSize: "13.5px" }}
+                              className="color-grey-500"
+                            >
+                              С помощью WYZO создали идеальный сайт для нашего
+                              проекта ZEKAMED: превосходный опыт и визуальное
+                              представление.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <img
+                    className="img-main"
+                    src="assets/imgs/page/homepage1/rasul3.png"
+                    alt="iori"
+                  />
                 </div>
               </div>
-            </div>
-            <div className="mt-80">
-              <div className="box-swiper">
-                <div className="swiper-container swiper-group-7-center">
-                  <Team />
+              <div className="col-xl-6">
+                <div className="box-banner-right-home6">
+                  <h1 className="color-brand-1">
+                    Начните свой онлайн-бизнес сегодня
+                  </h1>
+                  <div className="row">
+                    <div className="col-lg-10">
+                      <p className="font-md color-grey-500 mt:50 " style={{marginTop:"40px"}}>
+                        Элегантно структурируйте решение для электронной
+                        коммерции, которое будет соответствовать вашему бизнесу
+                        и расширяться вместе с вашим рынком.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* <div className="box-button mt-20">
+                    <Link className="btn-app mb-15 hover-up" href="#">
+                      <img
+                        src="assets/imgs/template/appstore-btn.png"
+                        alt="iori"
+                      />
+                    </Link>
+                    <Link className="btn-app mb-15 hover-up" href="#">
+                      <img
+                        src="assets/imgs/template/google-play-btn.png"
+                        alt="iori"
+                      />
+                    </Link>
+                    <Link
+                      className="btn btn-default mb-15 pl-10 font-sm-bold hover-up"
+                      href="#"
+                    >
+                      Learn More
+                      <svg
+                        className="w-6 h-6 icon-16 ml-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        />
+                      </svg>
+                    </Link>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </section>
+        
         {/* <section className="section">
           <div className="container">
             <div className="banner-1">
@@ -120,7 +283,7 @@ const HomePage1 = () => {
             </div>
           </div>
         </section>
-        
+
         <section className="section mt-100">
           <div className="container">
             <div className="row">
@@ -487,7 +650,25 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Быстрая и безопасная витрина
+                        <b>SEO оптимизированная быстрая витрина</b>
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Оформление заказа на одной странице
                       </li>
                       <li>
                         <svg
@@ -504,7 +685,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Готовые шаблоны интерфейса
+                        <b>Неограниченное хранение продуктов</b>
                       </li>
                       <li>
                         <svg
@@ -521,59 +702,9 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Многоязычный
+                        Отчеты о продажах и посетителях
                       </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Расширенные инструменты редактора
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Списки желаний
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Обзоры продуктов/комментарии
-                      </li>
+
                       <li>
                         <svg
                           className="w-6 h-6 icon-16"
@@ -591,6 +722,7 @@ const HomePage1 = () => {
                         </svg>
                         Цифровые продукты
                       </li>
+
                       <li>
                         <svg
                           className="w-6 h-6 icon-16"
@@ -606,8 +738,10 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Отчеты о продажах
+                        Продавать в физическом магазине
+                        {/* <span className="pl-30">для хранения</span> */}
                       </li>
+
                       <li>
                         <svg
                           className="w-6 h-6 icon-16"
@@ -623,25 +757,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Продавайте по всему миру
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Перекрестные продажи и<br />{" "}
-                        <span className="pl-30">дополнительные продажи</span>
+                        Список желаний
                       </li>
                       <li>
                         <svg
@@ -658,8 +774,25 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Неограниченное пространство <br />
-                        <span className="pl-30">для хранения</span>
+                        Расширенный поиск товаров
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        СМС-уведомления
                       </li>
                       <li>
                         <svg
@@ -676,7 +809,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Регулярная техническая поддержка
+                        Почтовые уведомления
                       </li>
                       <li>
                         <svg
@@ -690,10 +823,10 @@ const HomePage1 = () => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
-                            d="M6 18L18 6M6 6l12 12"
+                            d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Глобальные сертификаты
+                        Уведомления в приложении
                       </li>
                       <li>
                         <svg
@@ -707,10 +840,79 @@ const HomePage1 = () => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
-                            d="M6 18L18 6M6 6l12 12"
+                            d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Сгруппированные продукты
+                        Социальный вход
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Предварительно настроенные результаты <br />
+                        <span className="pl-30">поиска</span>
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Управление запасами
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <b>Мультиязычный</b>
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <b>Мультивалютность</b>
                       </li>
                     </ul>
                   </div>
@@ -778,7 +980,25 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Все в стартовом пакете +
+                        <b>SEO оптимизированная быстрая витрина</b>
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Оформление заказа на одной странице
                       </li>
                       <li>
                         <svg
@@ -795,7 +1015,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Мультилокальный магазин
+                        <b>Неограниченное хранение продуктов</b>
                       </li>
                       <li>
                         <svg
@@ -812,7 +1032,62 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Мульти валюта
+                        Отчеты о продажах и посетителях
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Цифровые продукты
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Продавать в физическом магазине
+                        {/* <span className="pl-30">для хранения</span> */}
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Список желаний
                       </li>
                       <li>
                         <svg
@@ -829,7 +1104,25 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Мульти склад
+                        Расширенный поиск товаров
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        СМС-уведомления
                       </li>
                       <li>
                         <svg
@@ -846,7 +1139,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Пункты самовывоза
+                        Почтовые уведомления
                       </li>
                       <li>
                         <svg
@@ -863,7 +1156,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        B2B-интеграции
+                        Уведомления в приложении
                       </li>
                       <li>
                         <svg
@@ -880,9 +1173,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Особенный дизайн пользовательского
-                        <br />
-                        <span className="pl-30"> интерфейса</span>
+                        Социальный вход
                       </li>
                       <li>
                         <svg
@@ -899,7 +1190,8 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Мобильные приложения
+                        Предварительно настроенные результаты <br />
+                        <span className="pl-30">поиска</span>
                       </li>
                       <li>
                         <svg
@@ -916,9 +1208,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Инвентаризация, управляемая
-                        <br />
-                        <span className="pl-30"> ИИ</span>
+                        Управление запасами
                       </li>
                       <li>
                         <svg
@@ -935,9 +1225,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Служба поддержки клиентов,
-                        <br />
-                        <span className="pl-30"> управляемая ИИ</span>
+                        <b>Мультиязычный</b>
                       </li>
                       <li>
                         <svg
@@ -954,44 +1242,7 @@ const HomePage1 = () => {
                             d="M5 13l4 4L19 7"
                           />
                         </svg>
-                        Исполнение, управляемое ИИ
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        <span>Маркетинг, управляемый ИИ</span>
-                      </li>
-                      <li>
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        <span>
-                          CDN для более быстрого
-                          <p className="pl-30">обслуживания контента</p>
-                        </span>
+                        <b>Мультивалютность</b>
                       </li>
                     </ul>
                   </div>
@@ -1043,9 +1294,7 @@ const HomePage1 = () => {
                   </div>
                   <div className="mt-30 mb-30">
                     <ul className="list-ticks list-ticks-2">
-                      {" "}
                       <li>
-                        {" "}
                         <svg
                           className="w-6 h-6 icon-16"
                           fill="none"
@@ -1053,239 +1302,277 @@ const HomePage1 = () => {
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          {" "}
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
                             d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Все в Безлимитным пакете +
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Управление взаимоотношениями
-                        <br />
-                        <span className="pl-30">с клиентами</span>
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Настраиваемые продукты
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Сгруппированные продукты
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Аналитика веб-сайтов, отчеты о продажах
-                        <br />
-                        <span className="pl-35">
-                          и показатели на основе ИИ.
-                        </span>
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Отслеживание пользователей на
-                        <br />
-                        <span className="pl-35"> основе ИИ</span>
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Выполнение заказов с
-                        <br />
-                        <span className="pl-35">
-                          {" "}
-                          масштабируемой инфраструктурой
-                        </span>
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Варианты международной доставки
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Интеграция для продаж в <br />
-                        <span className="pl-35"> социальных сетях</span>
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Настройки и дополнения по требованию
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {" "}
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />{" "}
-                        </svg>{" "}
-                        Специализированная команда <br />
-                        <span className="pl-35"> разработчиков</span>
-                      </li>{" "}
-                      <li>
-                        {" "}
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M6 18L18 6M6 6l12 12"
                           />
                         </svg>
-                        Глобальные сертификаты
-                      </li>{" "}
+                        <b>SEO оптимизированная быстрая витрина</b>
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Оформление заказа на одной странице
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <b>Неограниченное хранение продуктов</b>
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Отчеты о продажах и посетителях
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Цифровые продукты
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Продавать в физическом магазине
+                        {/* <span className="pl-30">для хранения</span> */}
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Список желаний
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Расширенный поиск товаров
+                      </li>
+
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        СМС-уведомления
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Почтовые уведомления
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Уведомления в приложении
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Социальный вход
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Предварительно настроенные результаты <br />
+                        <span className="pl-30">поиска</span>
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Управление запасами
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <b>Мультиязычный</b>
+                      </li>
+                      <li>
+                        <svg
+                          className="w-6 h-6 icon-16"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <b>Мультивалютность</b>
+                      </li>
                     </ul>
                   </div>
                   <div className="mt-20">
