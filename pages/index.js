@@ -709,7 +709,7 @@ const HomePage1 = () => {
                   </div>
                   <div className="box-day-trial">
                     <span className="font-lg-bold color-brand-1">
-                      ${pricing == 1 ? "34" : "300"}
+                      ${pricing == 1 ? "45" : "34"}
                     </span>
                     <span className="font-md color-grey-500">/ месяц</span>
                     <br />
@@ -1037,7 +1037,7 @@ const HomePage1 = () => {
                   </div>
                   <div className="box-day-trial">
                     <span className="font-lg-bold color-brand-1">
-                      ${pricing == 1 ? "79" : "700"}
+                      ${pricing == 1 ? "90" : "79"}
                     </span>
                     <span className="font-md color-grey-500">
                       / месяц
