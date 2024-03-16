@@ -6913,6 +6913,17 @@ footer a {
   border: 1px solid #cde2e7;
   height: 595px;
 }
+.card-wrapper {
+  padding: 8px; /* Добавляем отступы вокруг каждой карточки */
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px; /* Добавляем скругление углов */
+  object-fit: cover; /* Обеспечиваем заполнение всей области изображения */
+}
+
 
 .lbl-on-top {
   position: absolute;

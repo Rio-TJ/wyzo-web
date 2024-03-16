@@ -337,50 +337,48 @@ const HomePage1 = () => {
                 </div>
                 <div className="col-xl-6 d-none d-xl-block h-100">
                   <div className="box-banner-7">
-                    <div className="banner-7-img-1 scroll-1">
+                    <div className="">
                       {" "}
                       <Classes data={[
     {
       color: "head-bg-5",
-      img: "Panda ss.png",
+      img: "g1.png",
     },
     {
       color: "head-bg-3",
-      img: "Panda2.png",
+      img: "g2.png",
     },
     {
       color: "head-bg-4",
-      img: "podari1.png",
+      img: "g3.png",
     },
-    {
-      color: "head-bg-4",
-      img: "podari2.png",
-    },
-    {
-      color: "head-bg-4",
-      img: "prem.png",
-    },
-  ]}/>
-                     
-                    </div>
-                    <div className="banner-7-img-2 scroll-2">
-                    <Classes data={[
-    {
-      color: "head-bg-5",
-      img: "zumeks1.png",
-    },
-    {
-      color: "head-bg-3",
-      img: "zumeks2.png",
-    },
-    {
-      color: "head-bg-4",
-      img: "roastingworks1.png",
-    },
+    
     {
       color: "head-bg-4",
       img: "Bonibicase1.png",
     },
+  ]}/>
+                     
+                    </div>
+                    <div className="">
+                    <Classes data={[
+   {
+    color: "head-bg-5",
+    img: "g7.png",
+  },
+  {
+    color: "head-bg-3",
+    img: "g8.png",
+  },
+  {
+    color: "head-bg-4",
+    img: "g6.png",
+  },
+  
+  {
+    color: "head-bg-4",
+    img: "g5.png",
+  },
   ]}/>
                      
                     </div>
@@ -1658,7 +1656,7 @@ const HomePage1 = () => {
                   </div>
                   <div className="mt-20">
                     <Link className="btn btn-brand-1-full hover-up" href="#">
-                      Вскоре
+                      Скоро...
                       <svg
                         className="w-6 h-6 icon-16 ml-10"
                         fill="none"
