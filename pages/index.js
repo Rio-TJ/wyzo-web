@@ -8,6 +8,7 @@ import Testimonial from "../components/slider/Testimonial";
 import ModalVideo from "react-modal-video";
 import Team from "../components/slider/Team";
 import Offer from "../components/slider/Offer";
+import Classes from "../components/slider/Classes";
 
 const HomePage1 = () => {
   const [isOpen, setOpen] = useState(false);
@@ -177,7 +178,10 @@ const HomePage1 = () => {
                   </h1>
                   <div className="row">
                     <div className="col-lg-10">
-                      <p className="font-md color-grey-500 mt:50 " style={{marginTop:"40px"}}>
+                      <p
+                        className="font-md color-grey-500 mt:50 "
+                        style={{ marginTop: "40px" }}
+                      >
                         Элегантно структурируйте решение для электронной
                         коммерции, которое будет соответствовать вашему бизнесу
                         и расширяться вместе с вашим рынком.
@@ -224,7 +228,7 @@ const HomePage1 = () => {
             </div>
           </div>
         </section>
-        
+
         {/* <section className="section">
           <div className="container">
             <div className="banner-1">
@@ -304,6 +308,83 @@ const HomePage1 = () => {
               <div className="box-swiper">
                 <div className="swiper-container swiper-group-4">
                   <Offer />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section banner-7">
+          <div className="container">
+            <div className="box-radius-32 ml-minus-85 mr-minus-85">
+              <div className="row align-items-center h-100">
+                <div className="col-xl-6">
+                  <div className="box-banner-left-home7">
+                    <span className="title-line line-48">
+                    Ваша идея - наша реализация
+                    </span>
+                    <h2 className="color-brand-1 mb-20 mt-5">
+                    Мы воплотим вашу идею в жизнь. Разработаем даже самые невероятные задумки
+                    </h2>
+                    <div className="row">
+                      <div className="col-lg-10">
+                        <p className="font-md color-grey-500 mb-25">
+                        Готовы превратить ваш бизнес в успешную историю? Мы готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div className="col-xl-6 d-none d-xl-block h-100">
+                  <div className="box-banner-7">
+                    <div className="banner-7-img-1 scroll-1">
+                      {" "}
+                      <Classes data={[
+    {
+      color: "head-bg-5",
+      img: "Panda ss.png",
+    },
+    {
+      color: "head-bg-3",
+      img: "Panda2.png",
+    },
+    {
+      color: "head-bg-4",
+      img: "podari1.png",
+    },
+    {
+      color: "head-bg-4",
+      img: "podari2.png",
+    },
+    {
+      color: "head-bg-4",
+      img: "prem.png",
+    },
+  ]}/>
+                     
+                    </div>
+                    <div className="banner-7-img-2 scroll-2">
+                    <Classes data={[
+    {
+      color: "head-bg-5",
+      img: "zumeks1.png",
+    },
+    {
+      color: "head-bg-3",
+      img: "zumeks2.png",
+    },
+    {
+      color: "head-bg-4",
+      img: "roastingworks1.png",
+    },
+    {
+      color: "head-bg-4",
+      img: "Bonibicase1.png",
+    },
+  ]}/>
+                     
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2421,7 +2502,6 @@ const HomePage1 = () => {
                           strokeWidth={2}
                           d="M5 13l4 4L19 7"
                         />
-                        
                       </svg>
                       Выполнение заказов на основе искусственного интеллекта.
                     </li>
@@ -3389,7 +3469,6 @@ const HomePage1 = () => {
             </div>
           </div>
         </section>
-        
 
         {/* <section className="section mt-50 mb-50">
           <div className="container">

@@ -6911,7 +6911,7 @@ footer a {
   background-color: #e0f1f4;
   overflow: hidden;
   border: 1px solid #cde2e7;
-  height: 690px;
+  height: 595px;
 }
 
 .lbl-on-top {
@@ -6948,7 +6948,7 @@ footer a {
 }
 
 .box-number-business .cardNumber {
-  border: 1px solid #cde2e7;
+  border: 1px solid #01acd7;
   padding: 18px 30px;
   box-shadow: 0px 0px 30px 0px rgba(14, 41, 50, 0.08);
   display: inline-block;
@@ -7248,6 +7248,7 @@ footer a {
 .box-banner-home10 {
   padding: 70px 0px 50px 0px;
 }
+
 
 .list-buttons-circle {
   border-bottom: 0px;
