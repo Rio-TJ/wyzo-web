@@ -9,12 +9,14 @@ import ModalVideo from "react-modal-video";
 import Team from "../components/slider/Team";
 import Offer from "../components/slider/Offer";
 import Classes from "../components/slider/Classes";
+import ZohoForm from "../components/layout/ZohoForm";
 
 const HomePage1 = () => {
   const [isOpen, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(1);
   const [pricing, setPricing] = useState(1);
 
+  const [openZoho, setOpenZoho] = useState(false);
   const handlePricing = (index) => {
     setPricing(index); // remove the curly braces
   };
@@ -320,67 +322,93 @@ const HomePage1 = () => {
                 <div className="col-xl-6">
                   <div className="box-banner-left-home7">
                     <span className="title-line line-48">
-                    Ваша идея - наша реализация
+                      Ваша идея - наша реализация
                     </span>
                     <h2 className="color-brand-1 mb-20 mt-5">
-                    Мы воплотим вашу идею в жизнь. Разработаем даже самые невероятные задумки
+                      Мы воплотим вашу идею в жизнь. Разработаем даже самые
+                      невероятные задумки
                     </h2>
                     <div className="row">
                       <div className="col-lg-10">
                         <p className="font-md color-grey-500 mb-25">
-                        Готовы превратить ваш бизнес в успешную историю? Мы готовы помочь!
+                          Готовы превратить ваш бизнес в успешную историю? Мы
+                          готовы помочь!
                         </p>
                       </div>
+                      <div className="box-button">
+                        <ZohoForm open={openZoho} setOpen={setOpenZoho} />
+                        {/* <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                       Начать
+                        <svg
+                          className="w-6 h-6 icon-16 ml-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          />
+                        </svg>
+                      </a> */}
+                      </div>
                     </div>
-                   
                   </div>
                 </div>
-                <div className="col-xl-6 d-none d-xl-block h-100">
+                <div
+                  className="col-xl-6 d-none d-xl-block h-100"
+                  style={{ paddingLeft: "50px" }}
+                >
                   <div className="box-banner-7">
                     <div className="">
                       {" "}
-                      <Classes data={[
-    {
-      color: "head-bg-5",
-      img: "g1.png",
-    },
-    {
-      color: "head-bg-3",
-      img: "g2.png",
-    },
-    {
-      color: "head-bg-4",
-      img: "g3.png",
-    },
-    
-    {
-      color: "head-bg-4",
-      img: "Bonibicase1.png",
-    },
-  ]}/>
-                     
+                      <Classes
+                        data={[
+                          {
+                            color: "head-bg-5",
+                            img: "g1.png",
+                          },
+                          {
+                            color: "head-bg-3",
+                            img: "g2.png",
+                          },
+                          {
+                            color: "head-bg-4",
+                            img: "g3.png",
+                          },
+
+                          {
+                            color: "head-bg-4",
+                            img: "Bonibicase1.png",
+                          },
+                        ]}
+                      />
                     </div>
                     <div className="">
-                    <Classes data={[
-   {
-    color: "head-bg-5",
-    img: "g7.png",
-  },
-  {
-    color: "head-bg-3",
-    img: "g8.png",
-  },
-  {
-    color: "head-bg-4",
-    img: "g6.png",
-  },
-  
-  {
-    color: "head-bg-4",
-    img: "g5.png",
-  },
-  ]}/>
-                     
+                      <Classes
+                        data={[
+                          {
+                            color: "head-bg-5",
+                            img: "g7.png",
+                          },
+                          {
+                            color: "head-bg-3",
+                            img: "g8.png",
+                          },
+                          {
+                            color: "head-bg-4",
+                            img: "g6.png",
+                          },
+
+                          {
+                            color: "head-bg-4",
+                            img: "g5.png",
+                          },
+                        ]}
+                      />
                     </div>
                   </div>
                 </div>
