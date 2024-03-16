@@ -56,7 +56,7 @@ const Classes = ({ data }) => {
               <img
                 src={`assets/imgs/page/homepage7/${item.img} `}
                 alt="iori"
-                style={{ height: "200px", width: "80%" }}
+                style={{ height: "200px", width: "85%" }}
               />
             </div>
           </SwiperSlide>
